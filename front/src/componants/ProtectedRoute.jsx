@@ -4,8 +4,9 @@ import { AuthContext } from "../context/AuthContext";
 
 export default function ProtecteRoute({ children }) {
   // hooks
-  const { user, loading } = useContext(AuthContext);
 
+  const { user, loading } = useContext(AuthContext);
+  console.log("AuthContext value is:", AuthContext);
   if (loading) return <p>Loading...</p>;
 
   if (!user) {
