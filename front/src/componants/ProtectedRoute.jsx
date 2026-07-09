@@ -3,9 +3,6 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
 export default function ProtecteRoute({ children }) {
-  // hooks
-  console.log("AuthContext value is:", AuthContext);
-
   const { user, loading } = useContext(AuthContext);
   if (loading) return <p>Loading...</p>;
 
