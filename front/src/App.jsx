@@ -4,7 +4,7 @@ import { AuthProvider } from "./context/AuthContext";
 import ProtecteRoute from "./componants/ProtectedRoute";
 
 import Login from "./pages/Login";
-import Register from "./pages/register";
+import Register from "./pages/Register";
 import { Notifications } from "./pages/Notfications";
 import { Product } from "./pages/Product";
 import Profile from "./pages/Profie";
