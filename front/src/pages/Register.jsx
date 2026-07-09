@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../context.js/AuthContext"; // تأكد من صحة مسار المجلد لديك (context.js أم context)
+import { AuthContext } from "../context/AuthContext"; // تأكد من صحة مسار المجلد لديك (context.js أم context)
 import { motion } from "framer-motion";
 import { Lock, User, Mail } from "lucide-react";
 

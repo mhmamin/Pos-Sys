@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 import { motion, AnimatePresence, hover, scale } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Bell, Rocket, User } from "lucide-react";
-import { AuthContext } from "../context.js/AuthContext";
+import { AuthContext } from "../context/AuthContext";
 
 export default function Header() {
   const location = useLocation();
