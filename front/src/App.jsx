@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./componants/Header";
 import { AuthProvider } from "./context/AuthContext";
+// import ProtecteRoute
 import ProtecteRoute from "./componants/ProtecteRoute";
 
 import Login from "./pages/Login";
