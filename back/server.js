@@ -27,7 +27,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://pos-sys-psi.vercel.app"],
+    origin: ["http://localhost:5173", "pos-sys-blond.vercel.app"],
     credentials: true,
   }),
 );
