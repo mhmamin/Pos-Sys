@@ -5,7 +5,7 @@ import {
   getCustomers,
   updateCustomer,
   deleteCustomer,
-} from "../controllers/customerController.js";
+} from "../controllers/CustomerController.js";
 
 import { protect, authorize } from "../middlewares/auth.js";
 
