@@ -27,10 +27,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "pos-sys-git-main-amin-almasri.vercel.app",
-    ],
+    origin: ["http://localhost:5173", "https://pos-sys-psi.vercel.app"],
     credentials: true,
   }),
 );
@@ -48,6 +45,7 @@ app.use("/api/admin/projects", adminProjectsRoutes);
 app.use("/api/admin/transactions", adminTransactionsRoutes);
 app.use("/api/admin/notifications", adminNotificationsRoutes);
 app.use("/api/admin/settings", settingsRoutes);
+app.use("/api/admin/reports", reportsRoutes);
 
 // General Routes
 app.use("/api/auth", userAuthRoutes);
