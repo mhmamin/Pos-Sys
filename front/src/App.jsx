@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./componants/Header";
 import { AuthProvider } from "./context/AuthContext";
-import ProtectedRoute from "./componants/ProtectedRoute";
+import ProtecteRoute from "./componants/ProtecteRoute";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
