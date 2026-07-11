@@ -29,7 +29,7 @@ app.use(
   cors({
     origin: [
       "https://pos-sys-blond.vercel.app",
-      "pos-sys-admin-penal-nine.vercel.app",
+      "https://pos-sys-admin-penal-nine.vercel.app",
     ],
 
     credentials: true, // هذه ضرورية جداً إذا كنت تستخدم Cookies أو JWT
