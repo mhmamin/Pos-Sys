@@ -25,12 +25,18 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: "https://pos-sys-blond.vercel.app", 
-  credentials: true, // هذه ضرورية جداً إذا كنت تستخدم Cookies أو JWT
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"] // أضف هذا السطر لضمان مرور التوكن
-}));
+app.use(
+  cors({
+    origin: [
+      "https://pos-sys-blond.vercel.app",
+      "pos-sys-admin-penal-nine.vercel.app",
+    ],
+
+    credentials: true, // هذه ضرورية جداً إذا كنت تستخدم Cookies أو JWT
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"], // أضف هذا السطر لضمان مرور التوكن
+  }),
+);
 
 app.use(express.json());
 app.use(cookieParser());
