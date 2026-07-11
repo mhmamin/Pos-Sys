@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const instance = axios.create({
   baseURL: "https://pos-sys-bn8s.onrender.com/api",
   withCredentials: true,
