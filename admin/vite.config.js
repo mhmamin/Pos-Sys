@@ -4,8 +4,9 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   css: {
-    transformer: "postcss",
-    lightningcss: false,
+    lightningcss: {
+      ignoredRules: ["@theme", "@tailwind", "@layer"],
+    },
   },
   build: {
     cssMinify: "esbuild",
