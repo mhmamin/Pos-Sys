@@ -1,5 +1,5 @@
 import { useState } from "react";
-import API from "../../../front/src/api/axios";
+import API from "axios";
 import { useNavigate } from "react-router-dom";
 import { FiUser, FiLock, FiShield } from "react-icons/fi";
 import { motion } from "framer-motion";
