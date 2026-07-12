@@ -3,5 +3,11 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  css: {
+    transformer: "postcss",
+    lightningcss: false,
+  },
+  build: {
+    cssMinify: "esbuild",
+  },
 });
-// force rebuild 1
